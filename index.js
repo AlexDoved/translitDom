@@ -16,6 +16,7 @@ inputTranslit.addEventListener("keyup", function (event) {
       alert("Вы не ввели текст для перевода!");
     } else {
       addNewItem();
+      inputTranslit.value = "";
     }
   }
 
@@ -24,6 +25,7 @@ inputTranslit.addEventListener("keyup", function (event) {
       alert("Вы не ввели текст для перевода!");
     } else {
       addNewItem();
+      inputTranslit.value = "";
     }
   };
 });
