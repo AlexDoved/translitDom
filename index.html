@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script defer src="index.js"></script>
+    <script defer src="alphabet.js"></script>
+    <script defer src="createTranslit.js"></script>
+    <script defer src="utils.js"></script>
+    <script defer src="download.js"></script>
+    <title>T.r.a.n.s.l.i.t</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="width-container">
+        <h1 class="title-app">t.r.a.n.s.l.i.t</h1>
+        <div class="input-translit">
+          <input class="main-input" type="text" placeholder="Введите текст" />
+          <button class="add-translit">Добавить</button>
+        </div>
+        <div class="block-translit">
+          <div class="block-translit-container">
+            <div class="item-translit">
+              <div class="left-section">
+                <span class="num-translit">1</span>
+                <span class="text-to-translate example">Привет 🤟🏻</span>
+              </div>
+              <div class="right-section">
+                <span class="text-after-translation example">Privet</span>
+                <svg
+                  viewbox="0 0 18 18"
+                  width="18px"
+                  height="18px"
+                  fill="none"
+                  class="delete-icon delete-item-1"
+                >
+                  <circle
+                    cx="9"
+                    cy="9"
+                    r="9"
+                    fill="#747474"
+                    class="delete-icon-color"
+                  ></circle>
+                  <path
+                    d="M5.75829 13C5.9763 13 6.16588 12.9147 6.30806 12.763L8.99052 10.0616L11.6919 12.763C11.8341 12.9052 12.0142 13 12.2322 13C12.6493 13 12.9905 12.6493 12.9905 12.2322C12.9905 12.0142 12.9147 11.8341 12.763 11.6919L10.0711 9L12.7725 6.2891C12.9336 6.12796 13 5.96682 13 5.75829C13 5.33175 12.6588 5 12.2417 5C12.0427 5 11.8815 5.06635 11.7204 5.22749L8.99052 7.93839L6.2891 5.23697C6.14692 5.08531 5.9763 5.01896 5.75829 5.01896C5.34123 5.01896 5 5.34123 5 5.76777C5 5.9763 5.08531 6.1564 5.22749 6.29858L7.91943 9L5.22749 11.7014C5.08531 11.8341 5 12.0237 5 12.2322C5 12.6493 5.34123 13 5.75829 13Z"
+                    fill="white"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="utils">
+          <button class="clear-all">
+            <img class="delete-icon-all" src="css/img/delete.svg" alt="" />
+            <span class="delete-text">Очистить всё</span>
+          </button>
+          <button class="download-txt">
+            <img class="download-icon" src="css/img/download-icon.svg" alt="" />
+            <span class="download-text">Скачать историю</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
